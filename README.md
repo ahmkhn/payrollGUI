@@ -28,8 +28,15 @@ Features:
 - Salary
 - Department
 
+-> Also has a feature to sort ascending/descending upon clicking the title pane.
 -------
 Example prompts:
 
-Left tab pane, search job title: "Director"
-Right tab pane, search name : "John Smith"
+<img width="595" alt="image" src="https://github.com/ahmkhn/payrollGUI/assets/104601942/0785f334-0037-43bc-bf6f-ba3d30cbe922">
+
+
+^^ Left tab pane, search job title: "Director"
+
+<img width="591" alt="image" src="https://github.com/ahmkhn/payrollGUI/assets/104601942/a1835ad8-e492-4599-9fa7-ab13cfe7ce80">
+
+^^Right tab pane, search name : "John Smith"
