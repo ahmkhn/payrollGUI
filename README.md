@@ -1,10 +1,11 @@
 # payrollGUI
 Payroll Graphical Interface for the Massachusetts State Federal Payroll
 
-Example prompts:
+
 
 
 Upon running:
+
 <img width="633" alt="image" src="https://github.com/ahmkhn/payrollGUI/assets/104601942/be77c1fa-40d5-4873-9d9b-1168c242978c">
 
 Load file named '2022-payroll.csv' from the compressed '2022-payroll.csv.zip'
@@ -26,3 +27,9 @@ Features:
 - Job Title
 - Salary
 - Department
+
+-------
+Example prompts:
+
+Left tab pane, search job title: "Director"
+Right tab pane, search name : "John Smith"
