@@ -1,0 +1,19 @@
+ 
+
+plugins {
+   id 'application'
+   id 'java'
+   id 'org.openjfx.javafxplugin' version '0.0.13'  //<- this JavaFX plugin will make it easier to declare out dependencies
+}
+
+sourceSets.main.java.srcDir("src")
+sourceSets.main.resources.srcDir("resources")
+
+
+repositories.mavenCentral()
+javafx.version = "20"
+javafx.modules = ['javafx.fxml', 'javafx.controls']
+
+application.mainClass = "Main"
+
+

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="paneTab" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PayrollSearch">
+  <tabs>
+    <Tab text="Search By Job Title">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="jobTitleSearcher" layoutX="324.0" layoutY="14.0" mnemonicParsing="false" text="Search!" onAction="#searchJobTitle"/>
+                  <TextField fx:id="jobTitleField" layoutX="148.0" layoutY="14.0" promptText="Enter Job Title..." />
+                  <Label layoutX="120.0" layoutY="52.0" text="Top Earners:" />
+                  <Label layoutX="408.0" layoutY="52.0" text="Bottom Earners:" />
+                  <TableView fx:id="top_earner_table" layoutX="28.0" layoutY="69.0" prefHeight="200.0" prefWidth="253.0">
+                    <columns>
+                      <TableColumn fx:id="tableNameTop" prefWidth="127.0" text="Name" />
+                      <TableColumn fx:id="tableSalaryTop" prefWidth="125.0" text="Salary" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="bot_earner_table" layoutX="328.0" layoutY="69.0" prefHeight="200.0" prefWidth="246.0">
+                     <columns>
+                        <TableColumn fx:id="tableNameBot" prefWidth="123.0" text="Name" />
+                        <TableColumn fx:id="tableSalaryBot" prefWidth="122.0" text="Salary" />
+                     </columns>
+                  </TableView>
+                  <Label fx:id="median" layoutX="237.0" layoutY="280.0" text="Median:" />
+                  <Label fx:id="average" layoutX="235.0" layoutY="308.0" text="Average:" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Search By Employee">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="IDSearcher" layoutX="345.0" layoutY="59.0" mnemonicParsing="false" text="Search!" onAction="#searchIDName"/>
+                  <TextField fx:id="IDorName" layoutX="173.0" layoutY="59.0" promptText="Enter ID or Full Name" />
+                  <TableView fx:id="IDTable" layoutX="66.0" layoutY="104.0" prefHeight="200.0" prefWidth="469.0">
+                     <columns>
+                        <TableColumn fx:id="IDTitle" prefWidth="123.0" text="Job Title" />
+                        <TableColumn fx:id="IDSalary" prefWidth="122.0" text="Salary" />
+                        <TableColumn fx:id="IDDept" prefWidth="223.0" text="Department" />
+                     </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
